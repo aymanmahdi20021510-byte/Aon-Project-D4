@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    
+}
+
+h1 img {
+    width: 100px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+
+.login {
+    background-color: rgba(246, 240, 232, 1);
+    padding: 13px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Free {
+    background-color: rgba(20, 32, 62, 1);
+    padding: 13px 30px;
+    border: none;
+    border-radius: 10px;
+    color:  white;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 252, 248, 1);
+    padding-bottom: 130px;
+}
+
+p {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+h2{
+    font-size: 66px;
+    text-align: center;
+    padding-top: 229px;
+} 
+
+.linespan{
+    font-size: 14px;
+    color: rgba(20, 32, 62, 1);
+    background-color: white;
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.thin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.line {
+  height: 1px;                 
+  width: 100%;
+  max-width: 636px;
+  min-width: 318px;
+  background-color: #e0e0e0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.grid h4 {
+    font-size: 22px;
+    color: rgba(20, 32, 62, 1);
+    margin-top: 20px;
+    min-height: 50px;   
+}
+
+.grid p{
+    color: rgba(20, 32, 62, 1);
+    font-size: 14px;
+    text-align: left;
+    margin-top: auto;
+}
+
+.grid img{
+    width: 100%;
+    aspect-ratio: 3 / 2; 
+    object-fit: cover;   
+    display: block;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
