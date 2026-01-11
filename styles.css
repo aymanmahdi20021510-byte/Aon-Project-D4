@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .container{
@@ -20,7 +21,18 @@ nav {
     display: flex;
     justify-content: center;
     gap: 56px;
-    
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
 }
 
 h1 img {
@@ -38,6 +50,7 @@ h1 img {
     background-color: rgba(246, 240, 232, 1);
     padding: 13px 30px;
     border: none;
+    font-weight: 400;
     border-radius: 10px;
 }
 
@@ -46,6 +59,7 @@ h1 img {
     padding: 13px 30px;
     border: none;
     border-radius: 10px;
+    font-weight: 400;
     color:  white;
 }
 
@@ -59,17 +73,38 @@ h1 img {
     padding-bottom: 130px;
 }
 
+.homebod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 p {
     padding-top: 30px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 22px;
+    color: rgba(20, 32, 62, 1);
+    font-weight: 400;
 }
 h2{
     font-size: 66px;
     text-align: center;
     padding-top: 229px;
+    font-weight: 700;
+    color: rgba(20, 32, 62, 1);
 } 
+
+.Freebod {
+    background-color: rgba(20, 32, 62, 1);
+    padding: 25px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    color:  white;
+    font-size: 18px;
+}
 
 .linespan{
     font-size: 14px;
@@ -78,6 +113,7 @@ h2{
     position: absolute;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: 600;
 }
 
 .thin {
@@ -125,14 +161,61 @@ h2{
 }
 
 @media (max-width: 1024px) {
+  h2 {
+    font-size: 48px;
+    padding-top: 100px;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  nav {
+    gap: 25px; 
+  }
 }
 
-/* Mobile: 1 column */
 @media (max-width: 600px) {
+  .flex {
+    flex-direction: column; 
+    gap: 20px;
+    text-align: center;
+  }
+  nav {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px; 
+  }
+
+  h2 {
+    font-size: 32px;
+    padding-top: 50px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+.hovery {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hovery:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.1);
+}
+
+.hovery:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
